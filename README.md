@@ -1,10 +1,10 @@
 # Private Contextual Bandits
 
 Code for reproducing the experiments in **Vanilla Policy Optimization Is Both Optimal and Differentially Private for Stochastic Contextual Bandits**.
-This repository includes experiment configurations, algorithm implementations, and precomputed results for generating the pairwise
-win-rate heatmap.
 
-Run the commands below from the repository root.
+This repository includes experiment configurations, algorithm implementations, and precomputed results for generating the pairwise win-rate heatmap.
+
+Run all commands below from the repository root.
 
 ## Setup
 
