@@ -1,0 +1,3653 @@
+{
+  "format": "paper-fixed-v1",
+  "description": "Replay the selected campaign settings used by the paper figures for OpenML 901, 1489, 41027, 1462, 1560, and 44743. One chosen loss and parameter setting per algorithm/privacy level; no hyperparameter search. FastCB uses logistic only.",
+  "datasets_dir": "../datasets",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "preprocessing": {
+    "use_bias": true,
+    "project_unitball": true
+  },
+  "datasets": [
+    {
+      "id": 901,
+      "settings": [
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 32,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 64,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.03125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 4,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 4,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.25,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.01,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 0.01,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 4,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "quadratic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.001
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "quadratic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 1489,
+      "settings": [
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 128,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.00390625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 128,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 64,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.00390625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 32,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 64,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.25,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 64,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.03125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 128,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.25,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 41027,
+      "settings": [
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 32,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 4,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.0078125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "quadratic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 8,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 4,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 8,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "quadratic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 2,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 2,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "quadratic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 0.01,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 8,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "quadratic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 1462,
+      "settings": [
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 2.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.000244140625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 4.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.03125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.0078125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.001
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.0001,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.0078125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 64.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.000244140625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 10.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 1560,
+      "settings": [
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.000244140625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.000244140625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1.0
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 32.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 16.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.00390625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1e-05
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.0078125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1.0
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1.0
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 32.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.001,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 16.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.000244140625,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1e-05
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 44743,
+      "settings": [
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 8.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 64.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 1000.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.03125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.001
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "logistic",
+          "epsilon": null,
+          "delta": 0.0,
+          "ridge_lambda": 1e-06,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 512.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.01,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 256.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.25,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10.0
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 8.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 128.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.01,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 64.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.0078125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.25,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1.0
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 4.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 32.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 16.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.25,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 1.0
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10.0
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 2.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "vpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "vpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 32.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "bpo",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 0.1,
+          "policy": {
+            "algorithm": "bpo",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 0.1,
+            "learning_rate_scale": 0.1,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "squarecb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "squarecb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 16.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "fastcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "fastcb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 10.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "linucb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "linucb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 0.0078125,
+            "width_scale": 0.1
+          }
+        },
+        {
+          "algorithm": "regcb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "regcb",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.01
+          }
+        },
+        {
+          "algorithm": "adacb",
+          "loss": "logistic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "adacb",
+            "gamma_exponent": 0.5,
+            "gamma_scale": 100.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 10.0
+          }
+        },
+        {
+          "algorithm": "supervised",
+          "loss": "quadratic",
+          "epsilon": 1.0,
+          "delta": 1e-05,
+          "ridge_lambda": 1.0,
+          "policy": {
+            "algorithm": "supervised",
+            "gamma_exponent": 0.0,
+            "gamma_scale": 1.0,
+            "learning_rate_scale": 1.0,
+            "ucb_scale": 1.0,
+            "width_scale": 0.1
+          }
+        }
+      ]
+    }
+  ]
+}

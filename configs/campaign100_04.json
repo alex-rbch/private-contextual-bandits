@@ -1,0 +1,164 @@
+{
+  "datasets": [
+    727,
+    735,
+    823,
+    847,
+    901,
+    980,
+    1067,
+    1069,
+    1487,
+    1494,
+    1496,
+    1537,
+    4538,
+    40497,
+    43956,
+    45547,
+    46504,
+    46930,
+    46951,
+    47150
+  ],
+  "datasets_dir": "../datasets",
+  "losses": [
+    "quadratic",
+    "logistic"
+  ],
+  "privacy": [
+    {
+      "epsilon": "inf",
+      "delta": 0
+    },
+    {
+      "epsilon": 8,
+      "delta": 1e-05
+    },
+    {
+      "epsilon": 4,
+      "delta": 1e-05
+    },
+    {
+      "epsilon": 2,
+      "delta": 1e-05
+    },
+    {
+      "epsilon": 1,
+      "delta": 1e-05
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "grid": {
+    "ridge_lambda": [
+      1e-06,
+      0.0001,
+      0.01,
+      0.1,
+      1
+    ],
+    "policies": {
+      "adacb": {
+        "gamma_scale": [
+          0.1,
+          1,
+          10,
+          100
+        ],
+        "gamma_exponent": [
+          0.25,
+          0.5
+        ],
+        "width_scale": [
+          0.01,
+          0.1,
+          1,
+          10
+        ]
+      },
+      "regcb": {
+        "width_scale": [
+          1e-05,
+          0.001,
+          0.01,
+          0.1,
+          1,
+          10
+        ]
+      },
+      "supervised": {},
+      "fastcb": {
+        "gamma_scale": [
+          0.1,
+          1,
+          10,
+          100,
+          1000
+        ],
+        "gamma_exponent": [
+          0.25,
+          0.5
+        ]
+      },
+      "linucb": {
+        "ucb_scale": [
+          0.000244140625,
+          0.00390625,
+          0.0078125,
+          0.03125,
+          0.25,
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      "vpo": {
+        "learning_rate_scale": [
+          2,
+          8,
+          32,
+          128,
+          512
+        ]
+      },
+      "bpo": {
+        "learning_rate_scale": [
+          0.001,
+          0.01,
+          0.1,
+          1
+        ],
+        "gamma_scale": [
+          0.001,
+          0.01,
+          0.1
+        ]
+      },
+      "squarecb": {
+        "gamma_scale": [
+          1,
+          4,
+          16,
+          64,
+          256
+        ],
+        "gamma_exponent": [
+          0.25,
+          0.5
+        ]
+      }
+    }
+  }
+}
