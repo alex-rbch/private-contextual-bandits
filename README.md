@@ -1,6 +1,9 @@
-# Differentially Private Contextual Multi-Armed Bandit Experiments
+# Private Contextual Bandits
 
-Run experiments from JSON configs and generate plots from saved results.
+Code for reproducing the experiments in **Vanilla Policy Optimization Is Both Optimal and Differentially Private for Stochastic Contextual Bandits**.
+This repository includes experiment configurations, algorithm implementations, and precomputed results for generating the pairwise
+win-rate heatmap.
+
 Run the commands below from the repository root.
 
 ## Setup
